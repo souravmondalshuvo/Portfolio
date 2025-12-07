@@ -72,3 +72,15 @@ nav ul li a:hover::after{
     font-style: 60px;
     margin-top: 20px;
 }
+
+.header-text h1 span{
+    color: #ff004f;
+}
+
+.header-text h1 span{
+    color: green;
+}
+
+.header-text h1 span{
+    color: #ff004f;
+}
