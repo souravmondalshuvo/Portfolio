@@ -54,7 +54,7 @@ nav ul li a{
 
 nav ul li a::after{
     content: '';
-    width: 100%;
+    width: 0;
     height: 3px;
     background: #ff004f;
     position: absolute;
@@ -447,4 +447,10 @@ nav .fas{
     .copyright{
         font-size: 14px;
     }
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }
