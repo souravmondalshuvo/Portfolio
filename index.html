@@ -14,15 +14,15 @@
         <div class="container">
             <nav>
                 <img src="Logo.jpeg" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <i class="fas fa-times"></i>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
                 </ul>
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <p>UI/UX Designer</p>
@@ -147,7 +147,7 @@
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fas fa-paper-plane"></i>souravmondal033@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i>01732972046</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+880 17 3297 2046</p>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/souravmondalshuvo.1024.official"><i class="fab fa-facebook"></i></a>
                         <a href="https://github.com/souravmondalshuvo"><i class="fa-brands fa-github"></i></a>
@@ -185,6 +185,20 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tabs")
         }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openMenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closeMenu() {
+            sidemenu.style.right = "-200px";
+        }
+
     </script>
 </body>
 </html>
