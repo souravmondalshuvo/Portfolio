@@ -81,12 +81,12 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 
-.bangla{
+.header-text h1 .bangla{
     color: #16a34a;
     font-weight: 600;
 }
 
-.desh{
+.header-text h1 .desh{
     color: #ff004f;
     font-weight: 600;
 }
